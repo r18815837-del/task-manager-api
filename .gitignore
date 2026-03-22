@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 __pycache__/
 *.py[cod]
 *.sqlite3
@@ -14,3 +15,31 @@ htmlcov/
 dist/
 build/
 *.egg-info/
+=======
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env
+
+# Django
+db.sqlite3
+*.log
+media/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python env files
+.env
+.env.*
+>>>>>>> 629efeffa29c35f9031cbd938acaa1a22a29f7a0

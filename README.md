@@ -1,5 +1,6 @@
 # Task Manager API
 
+<<<<<<< HEAD
 Task Manager API is a backend application built with FastAPI for managing users, projects, and tasks.
 
 This project demonstrates Python backend development skills:
@@ -84,3 +85,93 @@ task-manager-api/
 ├── Dockerfile
 ├── pyproject.toml
 └── README.md
+=======
+Backend API for managing tasks with authentication and filtering.
+
+## Tech Stack
+
+* Python
+* Django
+* Django REST Framework
+* PostgreSQL
+* Docker
+* JWT (SimpleJWT)
+* drf-spectacular (Swagger)
+
+## Features
+
+* User registration
+* JWT authentication
+* CRUD for tasks
+* Filtering tasks by status
+* Search tasks
+* Ordering tasks
+* Pagination
+* API documentation (Swagger)
+* Automated tests
+
+## Project Structure
+
+```
+task_manager/
+├── apps/
+│   ├── users/
+│   └── tasks/
+├── api/
+├── core/
+├── docker/
+├── tests/
+├── docker-compose.yml
+├── requirements.txt
+└── manage.py
+```
+
+## Run with Docker
+
+```bash
+docker compose up --build
+```
+
+## Apply migrations
+
+```bash
+docker compose exec web python manage.py migrate
+```
+
+## Run tests
+
+```bash
+docker compose exec web python manage.py test
+```
+
+## API Documentation
+
+Swagger UI:
+
+```
+http://127.0.0.1:8000/api/docs/
+```
+
+## Main Endpoints
+
+Register user
+
+```
+POST /api/users/register/
+```
+
+Login
+
+```
+POST /api/login/
+```
+
+Tasks
+
+```
+GET /api/tasks/
+POST /api/tasks/
+PATCH /api/tasks/{id}/
+DELETE /api/tasks/{id}/
+```
+>>>>>>> 629efeffa29c35f9031cbd938acaa1a22a29f7a0
